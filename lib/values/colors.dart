@@ -25,6 +25,15 @@ abstract class AppColor {
   static const Color favColor = Color(0xffF31C56);
   static const Color lightBlue = Color(0xff6783c3);
 
+  static const Color accent = Color(0xff11dce8);
+  static const Color darkBg = Color(0xff091522);
+    static const Color text = Color(0xff8d8e99);
+  static const Color elevation = Color(0xff0d1f29);
+  static const Color stroke = Color(0xff3a3a42);
+  static const Color gradient1 = Color(0xff00e5e5);
+  static const Color gradient2 = Color(0xff72a5f2);
+  static const Color gradient3 = Color(0xffe961ff);
+
   static const Color white = Colors.white;
   static const Color black = Colors.black;
   static const Color purple = Colors.purple;

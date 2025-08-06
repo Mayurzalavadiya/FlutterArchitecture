@@ -24,30 +24,41 @@ void imageVideoPickerDialog ({
         child: Wrap(
           alignment: WrapAlignment.center,
           children: [
-            if (showImage) ...[
-              const Text(
-                "Select Photo",
+            // 📷 Image + 📄 Document Section (if both are true)
+            if (showImage || showDocument) ...[
+              Text(
+                showImage ? "Select Image" : "Select Document",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               ),
               const SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  _OptionItem(
-                    icon: Icons.camera_alt,
-                    label: "Take Photo",
-                    onTap: () => onActionSelected(MediaAction.imageFromCamera),
-                  ),
+                  if (showImage)
+                    _OptionItem(
+                      icon: Icons.camera_alt,
+                      label: "Take Photo",
+                      onTap: () => onActionSelected(MediaAction.imageFromCamera),
+                    ),
+                  if (showImage)
+                    _OptionItem(
+                      icon: Icons.photo_library,
+                      label: "From Gallery",
+                      onTap: () => onActionSelected(MediaAction.imageFromGallery),
+                    ),
                   // const SizedBox(width: 24),
-                  _OptionItem(
-                    icon: Icons.photo_library,
-                    label: "From Gallery",
-                    onTap: () => onActionSelected(MediaAction.imageFromGallery),
-                  ),
+                  if (showDocument)
+                    _OptionItem(
+                      icon: Icons.picture_as_pdf,
+                      label: "Select PDF",
+                      onTap: () => onActionSelected(MediaAction.selectDocument),
+                    ),
                 ],
               ),
               const SizedBox(height: 16),
             ],
+
+            // 🎥 Video Section (if needed separately)
             if (showVideo) ...[
               const Text(
                 "Select Video",
@@ -71,21 +82,6 @@ void imageVideoPickerDialog ({
                 ],
               ),
               const SizedBox(height: 16),
-            ],
-            if (showDocument) ...[
-              const Text(
-                "Select Document",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              const SizedBox(height: 30),
-              Center(
-                child: _OptionItem(
-                  icon: Icons.picture_as_pdf,
-                  label: "Select PDF",
-                  onTap: () => onActionSelected(MediaAction.selectDocument),
-                ),
-              ),
-              const SizedBox(height: 8),
             ],
           ],
         ),

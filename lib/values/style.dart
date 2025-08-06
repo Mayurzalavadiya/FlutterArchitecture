@@ -32,6 +32,14 @@ final TextStyle textRegular = TextStyle(
   color: AppColor.black,
   overflow: TextOverflow.ellipsis,
 );
+final TextStyle textFigtreeRegular = TextStyle(
+  decoration: TextDecoration.none,
+  fontWeight: FontWeight.w400,
+  fontFamily: Assets.fontsFigtreeRegular,
+  fontSize: 18.spMin,
+  color: AppColor.text,
+  overflow: TextOverflow.ellipsis,
+);
 final TextStyle textMedium = TextStyle(
   decoration: TextDecoration.none,
   fontWeight: FontWeight.w500,
@@ -53,10 +61,19 @@ final TextStyle textBold = TextStyle(
   fontSize: 16.spMin,
   overflow: TextOverflow.ellipsis,
 );
+final TextStyle textFigtreeBold = TextStyle(
+  decoration: TextDecoration.none,
+  fontWeight: FontWeight.w700,
+  fontFamily: Assets.fontsFigtreeBold,
+  fontSize: 18.spMin,
+  color: AppColor.white,
+  overflow: TextOverflow.ellipsis,
+);
 final TextStyle textExtraBold = TextStyle(
   decoration: TextDecoration.none,
   fontWeight: FontWeight.w800,
   fontSize: 16.spMin,
+  fontFamily: Assets.fontsFigtreeExtraBold,
   overflow: TextOverflow.ellipsis,
 );
 final TextStyle textBlack = TextStyle(
@@ -68,4 +85,10 @@ final TextStyle textBlack = TextStyle(
 
 final BoxDecoration boxDecoration = BoxDecoration(
   borderRadius: BorderRadiusGeometry.circular(8.r),
+);
+
+final BoxDecoration figmaBoxDecoration = BoxDecoration(
+  color: AppColor.darkBg.withOpacity(0.7), // Background color
+  borderRadius: BorderRadius.all(Radius.circular(50.r)),
+  border: Border.all(width: 1, color: AppColor.stroke),
 );

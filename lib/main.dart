@@ -10,7 +10,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_first_app/router/app_router.dart';
 import 'package:my_first_app/ui/provider/provider/todo_provider.dart';
 import 'package:my_first_app/utils/notification_service.dart';
-import 'package:my_first_app/utils/permissions.dart';
 import 'package:my_first_app/widget/show_message.dart';
 import 'package:provider/provider.dart';
 

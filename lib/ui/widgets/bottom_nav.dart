@@ -3,6 +3,7 @@ import 'package:badges/badges.dart' as badges;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:my_first_app/core/db/app_db.dart';
 import 'package:my_first_app/core/db/share_pref.dart';
 import 'package:my_first_app/router/app_router.dart';
@@ -66,8 +67,6 @@ class _BottomNavPageState extends State<BottomNavPage> {
       QuotesPage(),
       LoginPage(),
       ImageVideoPickerPage(),
-      HiveDataPage(),
-      AnimatedContainerPage(),
     ];
 
     void onDrawerItemTapped(int index) {
@@ -152,7 +151,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
                     selectedTileColor: Colors.deepPurple.shade100,
                     onTap: () => onDrawerItemTapped(2),
                   ),
-                  ListTile(
+                 /* ListTile(
                     leading: Icon(Icons.search),
                     title: Text('Hive Data'),
                     selected: selectedIndex == 5,
@@ -163,13 +162,11 @@ class _BottomNavPageState extends State<BottomNavPage> {
                       });
                       Navigator.pop(context);
                     },
-                  ),
+                  ),*/
 
                   ListTile(
                     leading: Icon(Icons.settings),
                     title: Text('Animated Container'),
-                    selected: selectedIndex == 8,
-                    selectedTileColor: Colors.deepPurple.shade100,
                     onTap: () {
                       Navigator.pop(context);
                       context.router.push(AnimatedContainerRoute());
@@ -178,8 +175,6 @@ class _BottomNavPageState extends State<BottomNavPage> {
                   ListTile(
                     leading: Icon(Icons.settings),
                     title: Text('Tween Animation'),
-                    selected: selectedIndex == 8,
-                    selectedTileColor: Colors.deepPurple.shade100,
                     onTap: () {
                       Navigator.pop(context);
                       context.router.push(TweenAnimationRoute());
@@ -188,17 +183,41 @@ class _BottomNavPageState extends State<BottomNavPage> {
                   ListTile(
                     leading: Icon(Icons.settings),
                     title: Text('Hero Animation'),
-                    selected: selectedIndex == 8,
-                    selectedTileColor: Colors.deepPurple.shade100,
                     onTap: () {
                       Navigator.pop(context);
                       context.router.push(HeroAnimationRoute());
                     },
                   ),
                   ListTile(
+                    leading: Icon(Icons.data_object_sharp),
+                    title: Text('Hive Data'),
+                    onTap: () {
+                      Navigator.pop(context);
+                      context.router.push(HiveDataRoute());
+
+                    },
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.data_object_sharp),
+                    title: Text('List'),
+                    onTap: () {
+                      Navigator.pop(context);
+                      context.router.push(ListRoute());
+
+                    },
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.data_object_sharp),
+                    title: Text('Figma Design'),
+                    onTap: () {
+                      Navigator.pop(context);
+                     context.pushRoute(FigmaSplashRoute());
+                    },
+                  ),
+                  ListTile(
                     leading: Icon(Icons.logout),
                     title: Text('LogOut'),
-                    selected: selectedIndex == 6,
+                    selected: selectedIndex == 8,
                     selectedTileColor: Colors.deepPurple.shade100,
                     onTap: () {
                       Navigator.pop(context);
@@ -399,10 +418,10 @@ class _BottomNavPageState extends State<BottomNavPage> {
                 icon: Icon(Icons.ac_unit_rounded),
                 label: 'Image Picker',
               ),
-              BottomNavigationBarItem(
+             /* BottomNavigationBarItem(
                 icon: Icon(Icons.data_object_sharp),
                 label: 'DataBase',
-              ),
+              ),*/
             ],
           ),
         ),

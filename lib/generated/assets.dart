@@ -2,19 +2,41 @@
 class Assets {
   Assets._();
 
+  static const String fontsFigtreeBold = 'assets/fonts/Figtree-Bold.ttf';
+  static const String fontsFigtreeExtraBold = 'assets/fonts/Figtree-ExtraBold.ttf';
+  static const String fontsFigtreeMedium = 'assets/fonts/Figtree-Medium.ttf';
+  static const String fontsFigtreeRegular = 'assets/fonts/Figtree-Regular.ttf';
+  static const String fontsFigtreeSemiBold = 'assets/fonts/Figtree-SemiBold.ttf';
   static const String fontsRotundaBold = 'assets/fonts/Rotunda-Bold.otf';
+  static const String imageActionTopMenu = 'assets/image/action_top_menu.png';
   static const String imageAddUser = 'assets/image/add_user.png';
   static const String imageApple = 'assets/image/apple.png';
   static const String imageArrowDown = 'assets/image/arrow_down.png';
   static const String imageBack = 'assets/image/back.png';
   static const String imageBackground = 'assets/image/background.jpg';
+  static const String imageBarIconEdit = 'assets/image/bar_icon_edit.png';
   static const String imageCheckedBox = 'assets/image/checked_box.png';
   static const String imageEmail = 'assets/image/email.png';
+  static const String imageFigmaBack = 'assets/image/figma_back.png';
+  static const String imageFigmaFlutterLogo = 'assets/image/figma_flutter_logo.png';
+  static const String imageFigmaIconHome = 'assets/image/figma_icon_home.png';
+  static const String imageFigmaImageSplash = 'assets/image/figma_image_splash.png';
+  static const String imageFigmaLoader = 'assets/image/figma_loader.png';
+  static const String imageFigmaLogo = 'assets/image/figma_logo.png';
   static const String imageGoogle = 'assets/image/google.png';
+  static const String imageGroup1 = 'assets/image/group_1.png';
+  static const String imageGroup312 = 'assets/image/group_312.png';
+  static const String imageIconMore = 'assets/image/icon_more.png';
   static const String imageMobile = 'assets/image/mobile.png';
   static const String imagePassword = 'assets/image/password.png';
+  static const String imagePlanet1 = 'assets/image/planet_1.png';
   static const String imagePrevious = 'assets/image/previous.png';
+  static const String imageProfile = 'assets/image/profile.png';
+  static const String imageSoc1 = 'assets/image/soc_1.png';
+  static const String imageSoc2 = 'assets/image/soc_2.png';
+  static const String imageSoc3 = 'assets/image/soc_3.png';
   static const String imageSplash = 'assets/image/splash.jpg';
+  static const String imageTabIcon = 'assets/image/tab_icon.png';
   static const String imageTwitter = 'assets/image/twitter.png';
   static const String imageUser = 'assets/image/user.png';
 

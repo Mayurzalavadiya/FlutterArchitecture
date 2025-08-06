@@ -191,7 +191,6 @@ class _HomePageState extends State<HomePage> {
             setState(() {
               product.isSelected = !product.isSelected; // Toggle selection
             });
-            final appDB = locator.get<AppDB>();
             final currentList = appDB.products;
 
             // Add or remove the product
