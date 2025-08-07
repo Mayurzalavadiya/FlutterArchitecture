@@ -88,7 +88,7 @@ final BoxDecoration boxDecoration = BoxDecoration(
 );
 
 final BoxDecoration figmaBoxDecoration = BoxDecoration(
-  color: AppColor.darkBg.withOpacity(0.7), // Background color
+  color: AppColor.darkBg.withSafeOpacity(0.7), // Background color
   borderRadius: BorderRadius.all(Radius.circular(50.r)),
   border: Border.all(width: 1, color: AppColor.stroke),
 );

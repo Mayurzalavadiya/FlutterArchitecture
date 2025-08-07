@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app/values/colors.dart';
 
 class LoadingWidget extends StatefulWidget {
   final bool? backgroundTransparent;
@@ -32,7 +33,7 @@ class _LoadingWidgetState extends State<LoadingWidget> {
           dismissible: false,
           color: widget.backgroundTransparent == true
               ? Colors.transparent
-              : Colors.black.withOpacity(0.3),
+              : Colors.black.withSafeOpacity(0.3),
         ),
         const Center(child: CircularProgressIndicator.adaptive()),
       ],
@@ -46,7 +47,7 @@ class _LoadingWidgetState extends State<LoadingWidget> {
             alignment: Alignment.center,
             color: widget.backgroundTransparent == true
                 ? Colors.transparent
-                : Colors.grey.withOpacity(0.7),
+                : Colors.grey.withSafeOpacity(0.7),
             child: const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[

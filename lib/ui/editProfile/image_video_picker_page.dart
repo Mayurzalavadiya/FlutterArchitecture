@@ -66,7 +66,7 @@ class _ImageVideoPickerPageState extends State<ImageVideoPickerPage> {
         showCustomToast(
           textColor: AppColor.white,
           context,
-          // backgroundColor: AppColor.red.withOpacity(0.5),
+          // backgroundColor: AppColor.red.withSafeOpacity(0.5),
           message: error,
           border: Border.all(
             strokeAlign: BorderSide.strokeAlignInside,

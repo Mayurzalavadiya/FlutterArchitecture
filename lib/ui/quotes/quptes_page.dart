@@ -186,8 +186,8 @@ class _QuotesPageState extends State<QuotesPage> {
     return Card(
       // shadowColor: Colors.grey,
       color: quote.isFavourite == true
-          ? Colors.green.withOpacity(0.4) // highlight favorite
-          : AppColor.purple.withOpacity(0.5),
+          ? Colors.green.withSafeOpacity(0.4) // highlight favorite
+          : AppColor.purple.withSafeOpacity(0.5),
       // elevation: 4,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       child: Padding(
@@ -253,7 +253,7 @@ class _QuotesPageState extends State<QuotesPage> {
       titleWidgetColor: AppColor.white,
       centerTitle: false,
       scrolledUnderElevation: 20,
-      backgroundColor: AppColor.purple.withOpacity(0.8),
+      backgroundColor: AppColor.purple.withSafeOpacity(0.8),
       leadingIcon: true,
       preferredSize: Size.copy(Size.fromHeight(60)),
       showTitle: true,

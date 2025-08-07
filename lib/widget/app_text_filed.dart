@@ -117,7 +117,7 @@ class AppTextField extends StatelessWidget {
       decoration: decoration ??
           InputDecoration(
             counterStyle: textMedium.copyWith(
-              color: AppColor.accentColor.withOpacity(0.50),
+              color: AppColor.accentColor.withSafeOpacity(0.50),
             ),
             counterText: "",
             filled: filled,
@@ -148,7 +148,7 @@ class AppTextField extends StatelessWidget {
               borderSide: filled
                   ? BorderSide.none
                   : BorderSide(
-                      color: AppColor.santasGray.withOpacity(0.5),
+                      color: AppColor.santasGray.withSafeOpacity(0.5),
                     ),
             ),
             enabledBorder: OutlineInputBorder(
@@ -156,7 +156,7 @@ class AppTextField extends StatelessWidget {
               borderSide: filled
                   ? BorderSide.none
                   : BorderSide(
-                      color: AppColor.santasGray.withOpacity(0.5),
+                      color: AppColor.santasGray.withSafeOpacity(0.5),
                     ),
             ),
             errorBorder: OutlineInputBorder(
@@ -176,7 +176,7 @@ class AppTextField extends StatelessWidget {
               borderSide: filled
                   ? BorderSide.none
                   : BorderSide(
-                      color: AppColor.santasGray.withOpacity(0.5),
+                      color: AppColor.santasGray.withSafeOpacity(0.5),
                     ),
             ),
           ),

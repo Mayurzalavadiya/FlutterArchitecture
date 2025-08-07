@@ -34,28 +34,30 @@ class _FigmaSplashPageState extends State<FigmaSplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Image.asset(Assets.imageFigmaImageSplash, width: double.infinity, fit: BoxFit.cover),
-        Positioned(
-          top: 0,
-          left: 0,
-          bottom: 0,
-          right: 0,
-          child: Image.asset(Assets.imageFigmaLoader, height: 76.h, width: 213.w),
-        ),
-
-        Positioned(
-          bottom: 72,
-          right: 0,
-          left: 0,
-          child: Image.asset(
-            Assets.imageFigmaFlutterLogo,
-            height: 32.h,
-            width: 111.w,
+    return Scaffold(
+      body: Stack(
+        children: [
+          Image.asset(Assets.imageFigmaImageSplash, width: double.infinity, fit: BoxFit.cover),
+          Positioned(
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0,
+            child: Image.asset(Assets.imageFigmaLoader, height: 76.h, width: 213.w),
           ),
-        ),
-      ],
+
+          Positioned(
+            bottom: 72,
+            right: 0,
+            left: 0,
+            child: Image.asset(
+              Assets.imageFigmaFlutterLogo,
+              height: 32.h,
+              width: 111.w,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

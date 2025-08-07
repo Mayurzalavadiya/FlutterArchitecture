@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
         showCustomToast(
           textColor: AppColor.white,
           context,
-          // backgroundColor: AppColor.red.withOpacity(0.5),
+          // backgroundColor: AppColor.red.withSafeOpacity(0.5),
           message: "Reached end",
           border: Border.all(
             strokeAlign: BorderSide.strokeAlignInside,

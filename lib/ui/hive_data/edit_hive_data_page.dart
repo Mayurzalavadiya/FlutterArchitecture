@@ -45,7 +45,7 @@
             type: MaterialType.transparency,
             child: Container(
               decoration: boxDecoration.copyWith(
-                color: widget.product.isSelected?AppColor.teal.withOpacity(0.5):AppColor.white,
+                color: widget.product.isSelected?AppColor.teal.withSafeOpacity(0.5):AppColor.white,
                 *//* border: product.isSelected ? Border.all(color: Colors.black,
                     width: 1,
                     strokeAlign: BorderSide.strokeAlignInside) : null,*//*

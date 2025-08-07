@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
+import 'package:my_first_app/values/colors.dart';
 
 import '../../data/model/generalData/user_model.dart';
 import '../../router/app_router.dart';
@@ -43,7 +44,7 @@ class _ListPageState extends State<ListPage> {
                 type: MaterialType.transparency,
                 child: Container(
                   decoration: boxDecoration.copyWith(
-                    color: Colors.teal.withOpacity(0.5),
+                    color: Colors.teal.withSafeOpacity(0.5),
                   ),
                   child: ListTile(
                     leading: CircleAvatar(

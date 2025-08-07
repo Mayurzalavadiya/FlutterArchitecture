@@ -57,7 +57,7 @@ class _FigmaFavouritesPageState extends State<FigmaFavouritesPage> {
       width: double.infinity,
       padding: EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: AppColor.darkBg.withOpacity(0.7),
+        color: AppColor.darkBg.withSafeOpacity(0.7),
         border: Border.all(color: AppColor.stroke),
         borderRadius: BorderRadius.circular(28),
       ),

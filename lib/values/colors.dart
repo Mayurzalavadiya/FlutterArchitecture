@@ -42,3 +42,13 @@ abstract class AppColor {
   static const Color transparent = Colors.transparent;
   static const MaterialColor grey = Colors.grey;
 }
+
+extension SafeOpacity on Color {
+  /// Safe alternative to deprecated `withOpacity(double opacity)`
+  Color withSafeOpacity(double opacity) {
+    assert(opacity >= 0.0 && opacity <= 1.0);
+    return withValues(alpha: opacity);
+  }
+}
+
+

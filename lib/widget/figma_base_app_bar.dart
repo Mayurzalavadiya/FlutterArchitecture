@@ -69,7 +69,7 @@ class FigmaBaseAppBarState extends State<FigmaBaseAppBar> {
       width: double.infinity,
         decoration: !_isFavourite
             ? BoxDecoration(
-          color: AppColor.darkBg.withOpacity(0.5),
+          color: AppColor.darkBg.withSafeOpacity(0.5),
           borderRadius: BorderRadius.all(Radius.circular(25).r),
           border: Border.all(width: 2.w, color: AppColor.stroke),
         )

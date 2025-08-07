@@ -92,7 +92,7 @@ class CartListView extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 color: index % 2 == 0
-                    ? AppColor.red.withOpacity(0.7)
+                    ? AppColor.red.withSafeOpacity(0.7)
                     : AppColor.lightBlue,
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(8),

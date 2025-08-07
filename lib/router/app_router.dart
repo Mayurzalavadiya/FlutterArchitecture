@@ -16,6 +16,9 @@ import '../ui/figma/ui/home/figma_main_home_page.dart';
 import '../ui/figma/ui/home/figma_planet_detail_page.dart';
 import '../ui/figma/ui/profile/figma_profile_page.dart';
 import '../ui/figma/ui/splash/figma_splash_page.dart';
+import '../ui/figma2/MoodyPage.dart';
+import '../ui/figma2/NewsPage.dart';
+import '../ui/figma2/WorkOutAppPage.dart';
 import '../ui/hive_data/ListPage.dart';
 import '../ui/hive_data/detail_page.dart';
 import '../ui/hive_data/edit_hive_data_page.dart';
@@ -100,6 +103,21 @@ class AppRouter extends _$AppRouter {
     CustomRoute(
       page: FigmaProfileRoute.page,
       path: '/figmaProfile',
+      transitionsBuilder: TransitionsBuilders.slideLeftWithFade,
+      durationInMilliseconds: 800,
+    ),
+    
+    //Figma2
+    AutoRoute(page: MoodyRoute.page, path: '/moodyPage'),
+    CustomRoute(
+      page: WorkOutRoute.page,
+      path: '/figmaWorkOut',
+      transitionsBuilder: TransitionsBuilders.slideRightWithFade,
+      durationInMilliseconds: 800,
+    ),
+    CustomRoute(
+      page: NewsRoute.page,
+      path: '/figmaWorkOut',
       transitionsBuilder: TransitionsBuilders.slideLeftWithFade,
       durationInMilliseconds: 800,
     ),

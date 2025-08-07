@@ -87,7 +87,7 @@ class _FigmaPlanetDetailPageState extends State<FigmaPlanetDetailPage> {
             ),
             padding: EdgeInsets.only(top: 60.h),
             decoration: BoxDecoration(
-              color: AppColor.darkBg.withOpacity(0.7),
+              color: AppColor.darkBg.withSafeOpacity(0.7),
               borderRadius: BorderRadius.circular(28.r),
               border: Border.all(
                 width: 1,

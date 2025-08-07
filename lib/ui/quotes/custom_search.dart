@@ -67,7 +67,7 @@ class CustomSearchDelegate extends SearchDelegate {
             buildLeading(context);
           },
           child: Card(
-            color: AppColor.teal.withOpacity(0.5),
+            color: AppColor.teal.withSafeOpacity(0.5),
             elevation: 4,
             margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),

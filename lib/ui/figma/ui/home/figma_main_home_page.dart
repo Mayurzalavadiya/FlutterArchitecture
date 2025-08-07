@@ -65,7 +65,7 @@ class _FigmaMainHomePageState extends State<FigmaMainHomePage> {
           bottomNavigationBar: Container(
             height: 50.h,
             decoration: BoxDecoration(
-              color: AppColor.darkBg.withOpacity(0.7),
+              color: AppColor.darkBg.withSafeOpacity(0.7),
               borderRadius: BorderRadius.all(Radius.circular(15).r),
             ),
             child: BottomNavigationBar(

@@ -63,7 +63,7 @@ class _FigmaProfilePageState extends State<FigmaProfilePage> {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 24.w),
       decoration: BoxDecoration(
-        color: AppColor.darkBg.withOpacity(0.7),
+        color: AppColor.darkBg.withSafeOpacity(0.7),
         border: Border.all(color: AppColor.stroke),
         borderRadius: BorderRadius.circular(28),
       ),
@@ -125,7 +125,7 @@ class _FigmaProfilePageState extends State<FigmaProfilePage> {
       width: double.infinity,
       margin: EdgeInsets.symmetric(horizontal: 24.w),
       decoration: BoxDecoration(
-        color: AppColor.darkBg.withOpacity(0.7),
+        color: AppColor.darkBg.withSafeOpacity(0.7),
         border: Border.all(color: AppColor.stroke),
         borderRadius: BorderRadius.circular(28),
       ),

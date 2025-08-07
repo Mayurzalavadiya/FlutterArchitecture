@@ -116,6 +116,30 @@ class _BottomNavPageState extends State<BottomNavPage> {
                     style: TextStyle(color: Colors.white, fontSize: 24),
                   ),
                 ),*/
+                  ExpansionTile(
+                    leading: Icon(Icons.design_services),
+                    title: Text('Figma Design'),
+                    children: [
+                      ListTile(
+                        leading: Icon(Icons.looks_one),
+                        title: Text('Figma 1'),
+                        onTap: () {
+                          Navigator.pop(context);
+                          context.router.push(FigmaSplashRoute());
+                        },
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.looks_two),
+                        title: Text('Figma 2'),
+                        onTap: () {
+                          Navigator.pop(context);
+                          context.router.push(MoodyRoute());
+                        },
+                      ),
+                    ],
+                  ),
+
+
                   ListTile(
                     leading: Icon(Icons.home),
                     title: Text('Widgets'),
@@ -204,14 +228,6 @@ class _BottomNavPageState extends State<BottomNavPage> {
                       Navigator.pop(context);
                       context.router.push(ListRoute());
 
-                    },
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.data_object_sharp),
-                    title: Text('Figma Design'),
-                    onTap: () {
-                      Navigator.pop(context);
-                     context.pushRoute(FigmaSplashRoute());
                     },
                   ),
                   ListTile(

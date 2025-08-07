@@ -16,7 +16,10 @@ class Assets {
   static const String imageBackground = 'assets/image/background.jpg';
   static const String imageBarIconEdit = 'assets/image/bar_icon_edit.png';
   static const String imageCheckedBox = 'assets/image/checked_box.png';
+  static const String imageDoctorPNGImages = 'assets/image/Doctor_PNG_Images.png';
+  static const String imageEllipse6 = 'assets/image/Ellipse_6.png';
   static const String imageEmail = 'assets/image/email.png';
+  static const String imageFigma2Logo = 'assets/image/figma2_logo.png';
   static const String imageFigmaBack = 'assets/image/figma_back.png';
   static const String imageFigmaFlutterLogo = 'assets/image/figma_flutter_logo.png';
   static const String imageFigmaIconHome = 'assets/image/figma_icon_home.png';
@@ -28,8 +31,13 @@ class Assets {
   static const String imageGroup312 = 'assets/image/group_312.png';
   static const String imageIconMore = 'assets/image/icon_more.png';
   static const String imageMobile = 'assets/image/mobile.png';
+  static const String imageMorningYoga = 'assets/image/morning_yoga.png';
+  static const String imageNewsFrame1 = 'assets/image/news_frame_1.png';
+  static const String imageNewsFrame2 = 'assets/image/news_frame_2.png';
+  static const String imageNewsLogo = 'assets/image/news_logo.png';
   static const String imagePassword = 'assets/image/password.png';
   static const String imagePlanet1 = 'assets/image/planet_1.png';
+  static const String imagePngwing1 = 'assets/image/pngwing_1.png';
   static const String imagePrevious = 'assets/image/previous.png';
   static const String imageProfile = 'assets/image/profile.png';
   static const String imageSoc1 = 'assets/image/soc_1.png';
@@ -39,5 +47,6 @@ class Assets {
   static const String imageTabIcon = 'assets/image/tab_icon.png';
   static const String imageTwitter = 'assets/image/twitter.png';
   static const String imageUser = 'assets/image/user.png';
+  static const String imageWalkingTheDog = 'assets/image/Walking_the_Dog.png';
 
 }

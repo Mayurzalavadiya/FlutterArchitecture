@@ -69,7 +69,7 @@ class _GradientCircularPainter extends CustomPainter {
 
     // Draw background circle
     final bgPaint = Paint()
-      ..color = Colors.white.withOpacity(0.2)
+      ..color = Colors.white.withSafeOpacity(0.2)
       ..style = PaintingStyle.stroke
       ..strokeWidth = strokeWidth;
 

@@ -1,6 +1,7 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_first_app/values/colors.dart';
 
 Future<bool> hasInternetConnection() async {
   final result = await Connectivity().checkConnectivity();
@@ -18,7 +19,7 @@ Future<void> showCommonDialog({
     context: context,
     barrierLabel: "Barrier",
     barrierDismissible: barrierDismissible,
-    barrierColor: Colors.black.withOpacity(0.6),
+    barrierColor: Colors.black.withSafeOpacity(0.6),
     transitionDuration: const Duration(milliseconds: 200),
     pageBuilder: (_, __, ___) {
       return LayoutBuilder(builder: (context, _) {

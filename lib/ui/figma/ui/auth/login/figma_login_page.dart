@@ -8,7 +8,7 @@ import 'package:my_first_app/values/export.dart';
 
 @RoutePage()
 class FigmaLoginPage extends StatefulWidget {
-  const FigmaLoginPage({super.key});
+   const FigmaLoginPage({super.key});
 
   @override
   State<FigmaLoginPage> createState() => _FigmaLoginPageState();
@@ -60,7 +60,7 @@ class _FigmaLoginPageState extends State<FigmaLoginPage> {
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
-              color: AppColor.darkBg.withOpacity(0.7),
+              color: AppColor.darkBg.withSafeOpacity(0.7),
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20.r),
                 topRight: Radius.circular(20.r),
@@ -114,26 +114,28 @@ class _FigmaLoginPageState extends State<FigmaLoginPage> {
             textInputAction: TextInputAction.next,
             onFieldSubmitted: (_) =>
                 FocusScope.of(context).requestFocus(passwordFocus),
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               hintText: 'Email',
-              hintStyle: TextStyle(color: AppColor.text, fontSize: 18),
-              contentPadding: EdgeInsets.symmetric(
+              fillColor: emailFocus.hasFocus ? AppColor.santasGray : AppColor.santasGray,
+              hintStyle:  TextStyle(color: AppColor.text, fontSize: 18),
+              contentPadding:  EdgeInsets.symmetric(
                 horizontal: 17,
                 vertical: 13,
               ),
-              enabledBorder: OutlineInputBorder(
+
+              enabledBorder:  OutlineInputBorder(
                 borderSide: BorderSide(color: AppColor.stroke),
                 borderRadius: BorderRadius.all(Radius.circular(50)),
               ),
-              border: OutlineInputBorder(
+              border:  OutlineInputBorder(
                 borderSide: BorderSide(color: AppColor.stroke),
                 borderRadius: BorderRadius.all(Radius.circular(50)),
               ),
-              focusedBorder: OutlineInputBorder(
+              focusedBorder:  OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(50)),
                 borderSide: BorderSide(color: AppColor.white, width: 1.0),
               ),
-              labelStyle: TextStyle(
+              labelStyle:  TextStyle(
                 fontSize: 18,
                 fontFamily: Assets.fontsFigtreeRegular,
               ),
@@ -150,7 +152,7 @@ class _FigmaLoginPageState extends State<FigmaLoginPage> {
             textInputAction: TextInputAction.done,
             onFieldSubmitted: (_) =>
                 FocusScope.of(context).unfocus(),
-            decoration: const InputDecoration(
+            decoration:  InputDecoration(
               hintText: 'Password',
               hintStyle: TextStyle(color: AppColor.text, fontSize: 18),
               contentPadding: EdgeInsets.symmetric(
@@ -222,17 +224,17 @@ class _FigmaLoginPageState extends State<FigmaLoginPage> {
         Row(
           children: [
             Expanded(
-              child: Divider(height: 1, color: AppColor.white.withOpacity(0.2)),
+              child: Divider(height: 1, color: AppColor.white.withSafeOpacity(0.2)),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+              padding:  EdgeInsets.symmetric(horizontal: 10),
               child: Text(
                 'or sign in using',
                 style: textFigtreeRegular.copyWith(fontSize: 14.spMin),
               ),
             ),
             Expanded(
-              child: Divider(height: 1, color: AppColor.white.withOpacity(0.2)),
+              child: Divider(height: 1, color: AppColor.white.withSafeOpacity(0.2)),
             ),
           ],
         ),

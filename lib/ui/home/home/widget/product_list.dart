@@ -49,10 +49,10 @@ class ProductListView extends StatelessWidget {
             decoration: boxDecoration.copyWith(
               color: product.isSelected
                   ? isLocal
-                        ? Colors.teal.withOpacity(0.5)
+                        ? Colors.teal.withSafeOpacity(0.5)
                         : isEven
                         ? Colors.black26
-                        : AppColor.red.withOpacity(0.5)
+                        : AppColor.red.withSafeOpacity(0.5)
                   : null,
             ),
             child: ListTile(
